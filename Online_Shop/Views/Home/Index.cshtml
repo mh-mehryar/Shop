@@ -1,0 +1,61 @@
+﻿@model IEnumerable<DataLayer.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.Cat_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pro_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pro_Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Is_Active)
+            </th>*@
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.Image)*@
+                <img src="~/PageImages/@item.Image" class="thumbnail" style="max-width:120px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Cat_Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pro_Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pro_Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Is_Active)
+                </td>*@
+
+           
+        </tr>
+    }
+
+</table>

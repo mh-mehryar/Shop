@@ -1,0 +1,72 @@
+﻿@model DataLayer.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>آیا از حذف @Model.Pro_Title مطمئن هستید؟</h3>
+<div>
+    <h4>محصولات</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Cat_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Cat_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pro_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pro_Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pro_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pro_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Is_Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Is_Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            <img src="~/PageImages/@Model.Image" class="thumbnail" style="max-width:150px" />
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="حذف" class="btn btn-danger" /> |
+            @Html.ActionLink("بازگشت", "Index")
+        </div>
+    }
+</div>

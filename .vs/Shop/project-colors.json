@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9c1d4ca6-5541-43bd-94a9-cf7d427b5180": {
+      "ProjectGuid": "9c1d4ca6-5541-43bd-94a9-cf7d427b5180",
+      "DisplayName": "Online_Shop",
+      "ColorIndex": 0
+    },
+    "5abc5a9c-c9d5-4840-afc2-1a29d45db1b8": {
+      "ProjectGuid": "5abc5a9c-c9d5-4840-afc2-1a29d45db1b8",
+      "DisplayName": "DataLayer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

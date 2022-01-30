@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online_Shop", "Online_Shop\Online_Shop.csproj", "{9C1D4CA6-5541-43BD-94A9-CF7D427B5180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{5ABC5A9C-C9D5-4840-AFC2-1A29D45DB1B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C1D4CA6-5541-43BD-94A9-CF7D427B5180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1D4CA6-5541-43BD-94A9-CF7D427B5180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1D4CA6-5541-43BD-94A9-CF7D427B5180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1D4CA6-5541-43BD-94A9-CF7D427B5180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ABC5A9C-C9D5-4840-AFC2-1A29D45DB1B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ABC5A9C-C9D5-4840-AFC2-1A29D45DB1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ABC5A9C-C9D5-4840-AFC2-1A29D45DB1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ABC5A9C-C9D5-4840-AFC2-1A29D45DB1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E2B7999-02BB-496A-AC9C-BC24815DA26D}
+	EndGlobalSection
+EndGlobal
